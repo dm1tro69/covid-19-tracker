@@ -11,7 +11,7 @@ interface Props {
 }
 
 const Cards:FC<Props> = ({data}) => {
-    console.log(data)
+
     return (
         <div className={styles.container}>
             <Grid container spacing={3} justifyContent={'center'}>

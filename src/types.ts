@@ -22,3 +22,25 @@ export type Data = {
     countryDetail?: DailyTimeSeries
     lastUpdate: string
 }
+
+type ConfirmedDaily = {
+    total: number
+    china: number
+    outsideChina: number
+}
+export type Daily = {
+    totalConfirmed: number
+    mainlandChina: number
+    otherLocations: number
+    deltaConfirmed: number
+    totalRecovered: number
+    confirmed: ConfirmedDaily
+    deltaConfirmedDetail: ConfirmedDaily
+    deaths: ConfirmedDaily
+    recovered:ConfirmedDaily
+    active: number
+    deltaRecovered: number
+    incidentRate: number
+    peopleTested: number
+    reportDate: string
+}
