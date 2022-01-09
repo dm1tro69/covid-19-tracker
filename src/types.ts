@@ -44,3 +44,8 @@ export type Daily = {
     peopleTested: number
     reportDate: string
 }
+export type Countries = {
+    name: string
+    iso2: string
+    iso3: string
+}
